@@ -1,0 +1,126 @@
+<!doctype html>
+<title>Menu</title>
+<!-- set ipad viewport scaling -->
+<meta name="viewport" content="width=1600">
+<!-- enable ipad / iphone fullscreen app -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+	<style>
+	@font-face {
+		font-family: 'ChantelliAntiquaRegular';
+		src: local('☺'), url('Chantelli_Antiqua-webfont.ttf') format('truetype'), url('Chantelli_Antiqua-webfont.svg#webfontMa58pS1j') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	html, body {
+		height: 100%;
+		width: 1600px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	html {
+		background-color: black;
+		background-image: url(wood.jpg);
+		background-size: cover;
+	}
+	
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	article {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		padding-top: 30px;
+		width: 400px;
+		height: 1000px;
+		margin-left: -200px;
+		margin-top: -500px;
+		-webkit-box-shadow: 0px 5px 25px rgba(0,0,0,1);
+		border: 20px solid white;
+		background-image: url(canvas.jpg);
+		background-color: white;
+		background-size: cover;
+		text-align: center;
+		font-family: ChantelliAntiquaRegular;
+		font-size: 18px;
+		line-height: 200%;
+		-webkit-transform: rotate(5deg);
+		
+	}
+	#front {
+		left: 35%;
+		top: 45%;
+		-webkit-transform: rotate(-3deg);
+		z-index: 2;
+		
+	}
+	#back {
+		left: 60%;
+	}
+	h1 {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	@media all and (orientation:portrait) {
+		article {
+			font-size: 24px;
+		}
+		h1 {
+			font-size: 36px;
+		}
+	}
+	
+	aside#logo {
+		background-image: url(hetlogo.png);
+		background-repeat: no-repeat;
+		width: 200px;
+		height: 225px;
+		position: absolute;
+		bottom: 20px;
+		left: 0px;
+	}
+	
+	ul,li {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	li ul {
+		font-size: 80%;
+		line-height: 150%;
+	}
+	</style>
+</head>
+<body>
+	<article id="front">
+		<h1>Evolutie Kerstdiner</h1>
+		<h2>2013-2014</h2>
+		<aside id="logo">
+		</aside>
+	</article>
+	<article id="back">
+		<h1>Menu</h1>
+		<p>Te nuttigen in willekeurige volgorde:</p>
+		<section>
+			<ul>
+				<li>Bier en olijven
+				<li>Amusante amuse
+				<li>Salade van paling met appelstroop
+				<li>Pompoensoep à la mama
+				<li>Gouden plak
+				
+				<li>Vis moet zwemmen!
+				<li>Spraakmakend vleeschgerecht
+				<li>Cake unpops
+				<li>Koffie en Koekjes
+				<li>Jäger
+			</ul>
+		</section>
+	</article>
+</body>

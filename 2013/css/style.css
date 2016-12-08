@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'ChantelliAntiquaRegular';
+    src: local('☺'), 
+        url('../fonts/Chantelli_Antiqua-webfont.ttf') format('truetype'), 
+        url('../fonts/Chantelli_Antiqua-webfont.svg#webfontMa58pS1j') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html {
+    background-color: black;
+    background-image: url(../img/stone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 1000px;
+    padding-top: 1em;
+    margin-left: -200px;
+    margin-top: -500px;
+    -webkit-box-shadow: 0px 5px 25px rgba(0,0,0,1);
+    box-shadow: 0px 5px 25px rgba(0,0,0,1);
+    border: 0.8em solid white;
+    background-image: url(../img/canvas.jpg);
+    background-color: white;
+    background-size: cover;
+    text-align: center;
+    font-family: ChantelliAntiquaRegular;
+    font-size: 18px;
+    line-height: 1.4em;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+
+#front {
+    left: 50%;
+    margin-left: -400px;
+    top: 45%;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+#back {
+    left: 50%;
+    margin-left: 0px;
+}
+
+@media screen and (orientation:portrait) and (max-width: 768px) {
+    article {
+        width: 300px;
+        height: 800px;
+        margin-left: -100px;
+        margin-top: -400px;
+        font-size: 12px;
+    }
+    #front {
+        margin-left: -350px;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px) {
+    article {
+        width: 200px;
+        height: 450px;
+        margin-left: -100px;
+        margin-top: -250px;
+        font-size: 12px;
+    }
+    #front {
+        margin-left: -230px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 20px;
+    }
+    #back {
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 20px;
+        font-size: 12px;
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        transform: rotate(3deg);
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    #front {
+        display: none;
+    }
+}
+
+
+h1 {
+    font-size: 250%;
+    line-height: 1.5em;
+}
+@media all and (orientation:portrait) {
+    article {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+}
+
+aside#logo {
+    background-image: url(../img/hetlogo.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 225px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+.control {
+    text-align: right;
+    padding-right: 5%;
+    font-size: 20px;
+}
+ul,li {
+    list-style: none;
+    padding: 0px;
+    margin: 0.5em 0;
+    min-height: 2em;
+}
+li input {
+    width: 80%;
+    font-size: inherit;
+    text-align: center;
+}
+li ul {
+    font-size: 80%;
+    line-height: 150%;
+}
