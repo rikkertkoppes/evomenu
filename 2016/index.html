@@ -37,32 +37,34 @@
     </style>
 </head>
 <body ng-app="menu" ng-controller="MenuCtrl">
-    <article id="front">
-        <h1>Evolutie Kerstdiner</h1>
-        <h2>2016-2017</h2>
-        <aside id="logo">
-        </aside>
-    </article>
-    <article id="back">
-        <h1>Menu</h1>
-        <p>Te nuttigen in willekeurige volgorde:</p>
-        <section ng-cloak>
-            <ul ng-show="editing">
-                <li ng-repeat="gang in menu">
-                    <input type="text" ng-model="gang.name"> <span ng-click="remRow($index)">x</span>
-                </li>
-            </ul>
-            <ul ui-sortable="{placeholder:'placeholder',axis:'y',stop:onUpdate}" ng-model="menu" ng-hide="editing">
-                <li ng-repeat="gang in menu">
-                    {{gang.name}}
-                </li>
-            </ul>
-            <div class="control" ng-show="editing">
-                <button ng-click="stopEdit()">Ok</button>
-                <button ng-click="newRow()">+</button>
-            </div>
-        </section>
-    </article>
+    <div>
+        <article id="front">
+            <h1>Evolutie Kerstdiner</h1>
+            <h2>2016-2017</h2>
+            <aside id="logo">
+            </aside>
+        </article>
+        <article id="back">
+            <h1>Menu</h1>
+            <p>Te nuttigen in willekeurige volgorde:</p>
+            <section ng-cloak>
+                <ul ng-show="editing">
+                    <li ng-repeat="gang in menu">
+                        <input type="text" ng-model="gang.name"> <span ng-click="remRow($index)">x</span>
+                    </li>
+                </ul>
+                <ul ui-sortable="{placeholder:'placeholder',axis:'y',stop:onUpdate}" ng-model="menu" ng-hide="editing">
+                    <li ng-repeat="gang in menu">
+                        {{gang.name}}
+                    </li>
+                </ul>
+                <div class="control" ng-show="editing">
+                    <button ng-click="stopEdit()">Ok</button>
+                    <button ng-click="newRow()">+</button>
+                </div>
+            </section>
+        </article>
+    </div>
     <script>
         angular.module('menu', ['ui']);
         // var socket = io.connect('http://162.13.1.186:3080/');
